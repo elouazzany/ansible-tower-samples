@@ -1,0 +1,6 @@
+---
+
+collections:
+  - name: freeipa.ansible_freeipa
+    version: 0.3.4
+    

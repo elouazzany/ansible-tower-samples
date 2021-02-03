@@ -1,9 +1,11 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
-    - name: Hello Message
-      command: ansible --version
+---
+- name: Playbook to configure IPA servers
+  hosts: ipaserver
+  become: true
+  # vars:
+  #   ipaserver_external_ca: yes
+  #   ipaserver_copy_csr_to_controller: yes
+    
+  roles:
+  - role: freeipa.ansible_freeipa.ipaserver
+    state: present

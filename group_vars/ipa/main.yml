@@ -1,0 +1,23 @@
+---
+ipaadmin_password: toototot
+ipadm_password:  toototot
+ipaserver_domain: toto.fr
+ipaserver_realm: TOTO.FR
+
+
+
+ipaserver_no_ui_redirect: yes
+ipaserver_no_hbac_allow: yes
+
+ipaserver_setup_firewalld: no
+ipareplica_setup_firewalld: no
+
+ipareplica_setup_ca: yes
+ipareplica_no_ui_redirect: yes
+
+ipaclient_no_ntp: yes
+ipaclient_force_join: yes
+ipaclient_allow_repair: yes
+ipaclient_mkhomedir: yes
+
+idm_expose_server_name: idm.toto.fr
